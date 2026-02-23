@@ -1,17 +1,8 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "tsconfig.app.json"
-    },
-    {
-      "path": "tsconfig.node.json"
-    }
-  ],
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+    "outDir": "dist",
+    "types": []
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
